@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">ZXingLibSample</string>
+	<string name="scan">Scan</string>
+	<string name="scan_resut_lable">Scan Result:</string>
+</resources>
