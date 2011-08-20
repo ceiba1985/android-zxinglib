@@ -1,4 +1,4 @@
-package jim.h.common.android.zxingjar.sample;
+package jim.h.common.android.zxingjar.demo;
 
 import jim.h.common.android.zxinglib.integrator.IntentIntegrator;
 import jim.h.common.android.zxinglib.integrator.IntentResult;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-public class ZXingJarSampleActivity extends Activity {
+public class ZXingJarDemoActivity extends Activity {
     private Handler  handler = new Handler();
     private TextView txtScanResult;
 
@@ -27,7 +27,7 @@ public class ZXingJarSampleActivity extends Activity {
             @Override
             public void onClick(View v) {
                 // set the last parameter to true to open front light if available
-                IntentIntegrator.initiateScan(ZXingJarSampleActivity.this, R.layout.capture,
+                IntentIntegrator.initiateScan(ZXingJarDemoActivity.this, R.layout.capture,
                         R.id.viewfinder_view, R.id.preview_view, true);
             }
         });
