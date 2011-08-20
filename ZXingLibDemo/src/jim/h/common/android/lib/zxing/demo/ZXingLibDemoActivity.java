@@ -1,4 +1,4 @@
-package jim.h.common.android.lib.zxing.sample;
+package jim.h.common.android.lib.zxing.demo;
 
 import jim.h.common.android.lib.zxing.config.ZXingLibConfig;
 import jim.h.common.android.lib.zxing.integrator.IntentIntegrator;
@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-public class ZXingLibSampleActivity extends Activity {
+public class ZXingLibDemoActivity extends Activity {
     private Handler        handler = new Handler();
     private TextView       txtScanResult;
     private ZXingLibConfig zxingLibConfig;
@@ -30,7 +30,7 @@ public class ZXingLibSampleActivity extends Activity {
         btnScan.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                IntentIntegrator.initiateScan(ZXingLibSampleActivity.this, zxingLibConfig);
+                IntentIntegrator.initiateScan(ZXingLibDemoActivity.this, zxingLibConfig);
             }
         });
     }
