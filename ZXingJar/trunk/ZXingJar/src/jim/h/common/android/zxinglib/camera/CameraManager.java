@@ -87,6 +87,8 @@ public final class CameraManager {
   public static void init(Context context, boolean useFrontLight) {
     if (cameraManager == null) {
       cameraManager = new CameraManager(context, useFrontLight);
+    } else {
+      cameraManager.useFrontLight = useFrontLight;
     }
   }
 
